@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Clearfix*/
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/*General*/
+
+@font-face
+{
+	font-family: 'Helvetica';
+	src: url("../Fuente/HelveticaNeue.ttf");
+}
+
+body
+{
+	margin: 0 auto;
+	font-family: 'Helvetica';
+	line-height: 1.4em;
+	font-size: 15px;
+	width:1140px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+ul,li
+{
+	text-decoration: none;
+	list-style: none;
+}
+
+/*Barra de navegacion*/
+
+.barra
+{
+	background-color: rgba(0,0,0,1);
+	width: 100%;
+	height: 66px;
+}
+
+.contenedor
+{
+	width: 95%;
+	margin: 0 auto;
+}
+
+div.logo 
+{
+	margin-left: 50px;
+	width: 10%;
+	height: 20px;
+	margin-right: 190px;
+	float: left;
+	margin-top: 23px;
+}
+
+div.logo img
+{
+	width: 100%;
+}
+
+nav.navegacionPrincipal
+{
+	width: 90%;
+	margin-top: 23px;
+}
+
+nav.navegacionPrincipal a
+{
+	color: #fff;
+	text-transform: uppercase;
+	width: 66px;
+	margin-right: 35px;
+	text-decoration: none;	
+	line-height: normal;
+}
+
+nav.navegacionPrincipal a:hover
+{
+	color: red;
+}
+
+
+/*Banner*/
+
+div.banner
+{
+	height: 612px;
+	background-image: url("../img/banner.png");
+	background-position: center;
+	background-size: cover;
+}
+
+div.contenido-header
+{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 200px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+div.contenido-header h1
+{
+	font-size: 60px;
+}
+
+.boton
+{
+	background-color: #ca0500;
+	padding: 20px 30px;
+	margin: 20px 30px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+	width: 166px;
+	text-decoration: none;
+}
+
+
+/*Al pasar encima el puntero agregar sombra interna de 0 0 50pixeles, color negro con opacidad de 0.5, ya agregarle un borde rojo, sólido y de 1pixel*/
+.boton:hover
+{
+	box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+	border: 1px solid #A20505;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+/*Articulos */
+
+.main
+{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.articulo
+{
+	
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+51,ffffff+51,111111+52,111111+52,111111+100 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(-75deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 51%, rgba(17,17,17,1) 52%, rgba(17,17,17,1) 52%, rgba(17,17,17,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-75deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%,rgba(17,17,17,1) 52%,rgba(17,17,17,1) 52%,rgba(17,17,17,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(100deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%,rgba(17,17,17,1) 52%,rgba(17,17,17,1) 52%,rgba(17,17,17,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#111111',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+	padding-left: 50px;
+}
+
+article p, article h2, article h3
+{
+	width: 80%;
+}
+
+.raya
+{
+	height: 2px;
+	width: 10%;
+	margin: 0px;
+	color: red;
+	border: 0;
+	background-color: #C51114;
+}
+
+#dos
+{
+	margin-left: 60px;
+}
+
+article h3
+{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 22px;
+	margin-bottom: 25px;
+
+}
+
+article:nth-child(2) > p,article:nth-child(2) > h2,article:nth-child(2) > h3
+{
+	color: #fff;
+	margin-left: 60px;
+}
+
+
+article
+{
+	padding-top: 60px;
+	width: 50%;
+	float: left;
+}
+
+section.articulo h2 
+{
+	font-size: 36px;
+	font-family: 'Helvetica'
+}
+
+p
+{
+	font-family: 'Helvetica';
+	margin-bottom: 60px;
+}
+
+
+
+/*FOOTER*/
+
+footer
+{
+	background-color: #111111;
+	padding-top: 25px;
+	color: #fff;
+	height: auto;
+}
+
+footer h3
+{
+	font-family: 'Helvetica';
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-left: 40px;
+}
+
+
+.involucrate li:hover, .acercaDe li:hover, .ayuda li:hover
+{
+	color: #f2f2f2;
+	cursor: pointer;
+}
+
+
+footer div.acercaDe
+{
+	width: 25%;
+	float: left;
+}
+
+footer li
+{
+	font-size: 13px;
+	color: #999;
+	line-height: 1.6px;
+}
+
+footer div.involucrate
+{
+	width: 25%;
+	float: left;
+	text-align: left;
+}
+
+li
+{
+	text-align: left;
+	margin-bottom: 20px;
+}
+footer div.ayuda 
+{
+	width: 25%;
+	float: left;
+}
+
+footer nav.redesSociales
+{
+	width: 25%;
+	float: left;
+	text-align: left;
+}
+
+.redondo i
+{
+	float: left;
+	font-size: 1.5em;
+ 	color: #FFF;
+	margin-top: 10px;
+	width: 45px;
+	height: 45px;
+}
+
+.redondo i:hover
+{
+	color: red; 
+}
+
+.redondo
+{
+	text-align: center;
+	float: left;
+	width: 45px;
+	height: 44px;
+	border-radius: 20px;
+	background-color: #000;
+	margin-right: 10px;
+	
+}
+
+.redondo:hover
+{
+	background-color: #fff;
+}
+	
+.linea {
+	
+  width: 70%;
+  border-top: 1px solid #f2f2f2 ;
+  height: 0.5px;
+  padding: 0;
+  margin-left: 40px;
+
+}
+
+
+
